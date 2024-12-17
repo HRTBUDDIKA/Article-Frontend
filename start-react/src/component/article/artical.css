@@ -1,0 +1,134 @@
+/* User Articles Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.article-list {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.user-articles-container {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.user-articles-container h1 {
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.articles-loading,
+.articles-error {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+.no-articles {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.no-articles p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.no-articles button {
+    background-color: #1A8917;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 99px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.articles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article-preview {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+}
+
+.article-content h2 {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.84);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.article-excerpt {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 15px;
+}
+
+.article-meta {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 15px;
+}
+
+.dot-separator {
+    margin: 0 8px;
+}
+
+.article-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.edit-btn,
+.delete-btn {
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.6);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.edit-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+.delete-btn {
+    color: #D8000C;
+    border-color: rgba(216, 0, 12, 0.2);
+}
+
+.delete-btn:hover {
+    background-color: rgba(216, 0, 12, 0.05);
+    border-color: rgba(216, 0, 12, 0.4);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .user-articles-container {
+        padding: 20px;
+    }
+
+    .user-articles-container h1 {
+        font-size: 28px;
+    }
+
+    .article-content h2 {
+        font-size: 20px;
+    }
+}

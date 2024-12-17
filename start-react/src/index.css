@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* box-sizing: border-box; */
+    overflow-x: hidden;
+}
+
+/* FOOTER STYKLING */
+.my-footer {
+    color: #f0e8e8;
+    background-color: #2c3e50;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: 500;
+}
+
+
+
+
